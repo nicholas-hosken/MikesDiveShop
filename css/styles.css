@@ -1,0 +1,28 @@
+.bust {
+	background-color:#060e50;
+	height:220px;
+}
+
+.topnav {
+	background-color:#060e50;
+	list-style-type:none;
+	border-top:2px #00CCFF;
+	height:25px;
+}
+
+.topnav ul {
+	padding-left:0px;
+}
+
+.topnav li {
+	display:inline-block;
+	width:100px;
+	height:40px;
+}
+
+.jumbotron {
+	background-image:url(../images/whale_shark.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:500px;
+}
