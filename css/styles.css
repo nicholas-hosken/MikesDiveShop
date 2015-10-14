@@ -1,28 +1,77 @@
+body {
+	background-color:#060e50;
+}
+
 .bust {
 	background-color:#060e50;
-	height:220px;
+	margin:20px auto;
 }
 
 .topnav {
 	background-color:#060e50;
 	list-style-type:none;
 	border-top:2px #00CCFF;
-	height:25px;
+	height:40px;
+	padding-top:5px;
+	border-top:2px #fff solid;
+	border-bottom:2px #fff solid;
 }
 
-.topnav ul {
+.topnav .container {
+	border-bottom:2px #fff solid;
+}
+
+.menu {
 	padding-left:0px;
 }
 
-.topnav li {
+.menu li {
 	display:inline-block;
-	width:100px;
-	height:40px;
+	width:150px;
+	float:left;
+	font-size:18px;
 }
 
-.jumbotron {
-	background-image:url(../images/whale_shark.jpg);
-	background-repeat:no-repeat;
-	background-size:cover;
-	height:500px;
+.lang {
+	margin-top:-5px;
+	margin-bottom:10px;
+	float:right;
 }
+
+.lang li {
+	display:inline-block;
+	width:auto;
+	float:right;
+	padding-left:4px;
+}
+
+
+.jumbotron {
+	clear:both;
+	/*background-image:url(../images/whale_shark.jpg);
+	background-size:cover; -------------------------
+	border-bottom:2px #fff solid;
+	background: url(../images/whale_shark.jpg) no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;*/
+  	background: transparent;
+	margin-top:0px;
+   	margin-bottom:0px;
+}
+
+.header-photo {
+	margin-top:0px;
+   	margin-bottom:0px;
+}
+
+#header.container {
+   	position: relative;
+   	padding:0px;
+   	margin-top:0px;
+   	margin-bottom:0px;
+   
+}
+
+
