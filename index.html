@@ -6,43 +6,51 @@
     <link rel="shortcut icon" href="images/icons/icon.ico">
 	<meta charset="utf-8">
     <!-- Makes site responsive on mobiles -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href=" http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="css/nav.css">  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+
     
   </head>
 
   <body>
-  	<!--
-  	<div class="bust">
-    	<div class="container">
-        	<img id="bustlogo" src="images/logo_bust.png" style="float:left">
-       	</div>
-   	</div>
-    -->
-  	<div class="topnav">
-      	<div class="container"> 	
-            <ul class="lang">
-                <li><a href="esp_index"><img src="images/icons/round_mexico.png"></a></li>            
-                <li><a href="eng_index"><img src="images/icons/round_usa.png"></a></li>
-            </ul>
 
-            <ul class="pull-left menu">
-                <li><a href="eng_index.html">Adventures</a></li>
-                <li><a href="eng_about.html">About Us</a></li>
-                <li><a href="eng_contact.html">Contact</a></li>
+	<nav class="clearfix">
+    	<div class="container">
+            <ul class="clearfix">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><img src="images/icons/round_usa.png"> English</a></li>
+                <li><a href="#"><img src="images/icons/round_mexico.png"> Spanish</a></li>
             </ul>
         </div>
-    </div>
-<!--
-    <div class="jumbotron">
-      <div class="container">
-      	<img  src="images/logo_small.png" class="pull-right">    
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>    
-      </div>
-    </div> 
--->
+		<a href="#" id="pull">Menu</a>
+	</nav>
 
     <div class="jumbotron">  
         <div id="header" class="container">  
