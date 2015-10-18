@@ -18,6 +18,14 @@
 	text-decoration:none;
 }
 
+.bust {
+	border-bottom:2px solid #fff;
+}
+
+.bust > .container > img:first-child {
+	margin-top:5px;
+}
+
 nav {
 	height: 40px;
 	width: 100%;
