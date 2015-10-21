@@ -11,14 +11,6 @@ h3 {
 
 .jumbotron {
 	clear:both;
-	/*background-image:url(../images/whale_shark.jpg);
-	background-size:cover; -------------------------
-	border-bottom:2px #fff solid;
-	background: url(../images/whale_shark.jpg) no-repeat center center; 
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;*/
   	background-color:#1c1d20;
 	background-image:url(../images/jbt_coral.png);
 	margin-top:0px;
@@ -45,6 +37,11 @@ h3 {
 	border-top:2px solid #fff;
 	border-bottom:2px solid #fff;
 }
+
+.content {
+	margin:25px auto;
+}
+	
 
 .chatter {
 	border-bottom:2px solid #fff;
